@@ -40,9 +40,11 @@ package quiz.pbo;
     public float getPrice(int serviceItem) {
         float price = 0;
         switch (serviceItem){
-            case 1 -> price = 45000f;
-            case 2 -> price = 55000f;
-            case 3 -> price = 15000f;
+            case 1 : price = 45000f;
+            break;
+            case 2 : price = 55000f;
+            break;
+            case 3 : price = 15000f;
         }
         return price;
     }
