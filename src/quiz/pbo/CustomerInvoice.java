@@ -13,21 +13,6 @@ package quiz.pbo;
  * Deskripsi Program :
  */
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-
-public class CustomerInvoice {
-
-    static Date date = new Date();
-    static Locale lokal = Locale.forLanguageTag("id");
-    static SimpleDateFormat formatter = new SimpleDateFormat("EEEE, dd MMM yyyy HH:mm:ss", lokal);
-
-    private static void tampilWaktu(){
-        System.out.println("Date Transaction : " + formatter.format(date));
-    }
- 
-    public static void main(String[] args) {
-        tampilWaktu();
-    }
+public interface CustomerInvoice {
+    public String currentTime();
 }

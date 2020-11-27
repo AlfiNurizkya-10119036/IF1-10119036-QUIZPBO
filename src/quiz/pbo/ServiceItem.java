@@ -13,13 +13,12 @@ package quiz.pbo;
  * NIM      : 10119036
  * Deskripsi Program :
  */
-public class ServiceItem {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+    public interface ServiceItem {
+    public void displayService();
+    public float getPrice(int serviceItem);
+    public boolean checkMemberStatus(String statusMember);
+    public float getSale(boolean isMember, float parServicePrice);
+
 }
+
